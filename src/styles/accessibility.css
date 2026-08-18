@@ -1,0 +1,37 @@
+.desk-explore-note {
+  position: absolute;
+  z-index: 8;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 11px;
+  border: 1px solid rgba(23, 61, 50, .25);
+  background: rgba(244, 240, 229, .72);
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.desk-explore-note span { color: var(--clay); }
+
+@media (max-width: 720px) {
+  .desk-explore-note {
+    position: relative;
+    top: auto;
+    left: auto;
+    order: 0;
+    align-self: center;
+    transform: none;
+    margin-bottom: 2px;
+  }
+
+  .header-contact,
+  .text-action {
+    min-height: 44px;
+    padding-block: 12px;
+  }
+
+  .header-contact { padding-inline: 8px; }
+  .text-action { padding-inline: 4px; }
+}
